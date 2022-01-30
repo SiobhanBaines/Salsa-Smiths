@@ -1,0 +1,39 @@
+/*
+COLOURS:
+
+dark-red: #680806
+medium-red: #cb1308
+light-red: #eb1009
+#fab7b5
+#9a0b08
+
+black: #080404
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #080404;
+    padding: 15px;
+}
+
+.header {
+    height: 97vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(248, 197, 87, 0.712), 
+        rgba(248, 45, 45, 0.8)), 
+        url(../images/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0,100% 75vh, 0 100%);
+}
