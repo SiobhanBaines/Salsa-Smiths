@@ -46,23 +46,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.heading-parent {
-    position: relative;
-}
 
 .logo {
-    height: 175px;
+    height: 100px;
     font-family: Gwendolyn;
-    font-size: 200px;
+    font-size: 150px;
     font-weight: 700;
     letter-spacing: 2.5px;
+    margin-bottom: 20%;
 }
-.heading-text-box {
-    position: absolute;
-    top: 200%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-}
+
 .heading-invitation {
     color: #080404;
     text-transform: uppercase;
