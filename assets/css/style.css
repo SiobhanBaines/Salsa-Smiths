@@ -1,37 +1,63 @@
-/*
-COLOURS:
 
-dark-red: #680806
-medium-red: #cb1308
-light-red: #eb1009
-#fab7b5
-#9a0b08
-
-black: #080404
-
-*/
-
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+    /* COLOURS */
+    --text-black: #080404;
+    --light-green: #bbdab3cc;
+    --mid-blue: #061064cc;
+    --mid-orange: #f8c557b6;
+    --bright-red: #f82d2dcc;
+    --red: #ff0000;
+
+    /* GRID */
+    --grid-width: 114rem;
+    --gutter-vertical: 8rem;
+    --gutter-horizontal: 6rem;
+}
+/* *:root {
+    /* COLOURS */
+    /* --text-black: #080404;
+    --light-green: #bbdab3cc;
+    --mid-blue: #061064cc;
+    --mid-orange: #f8c557b6;
+    --bright-red: #f82d2dcc;
+    --red: #ff0000; */
+
+    /* GRID */
+    /* --grid-width: 114rem;
+    --gutter-vertical: 8rem;
+    --gutter-horizontal: 6rem; */
+/* } */ 
+
+html {
+    /* default px is 16px ours is 10px. %age = 10/16= .625 or 62.5%*/
+    font-size: 62.5%;
 }
 
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.7;
-    color: #080404;
-    padding: 15px;
+    color: var(--text-black);
+    padding: 1.5rem;
+
+    box-sizing: border-box;
 }
 
 .header {
     height: 97vh;
     background-image: linear-gradient(
         to right bottom, 
-        rgba(248, 197, 87, 0.712), 
-        rgba(248, 45, 45, 0.8)), 
+        var(--light-green),
+        var(--mid-blue)),
+        /* rgba(187, 218, 179, 0.8), 
+        rgba(6, 16, 100, 0.8)),  */
+        /* rgba(248, 197, 87, 0.714), 
+        rgba(248, 45, 45, 0.8)),  */
         url(../images/hero.jpg);
     background-size: cover;
     background-position: top;
@@ -40,26 +66,114 @@ body {
     clip-path: polygon(0 0, 100% 0,100% 75vh, 0 100%);
 }
 
-.logo-text-box {
+.header__text-box {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.logo {
-    height: 100px;
-    font-family: Gwendolyn;
-    font-size: 150px;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    margin-bottom: 20%;
+.heading-primary {
+    backface-visibility: hidden;
 }
 
-.heading-invitation {
-    color: #080404;
+.heading-primary--main {
+    display: block;
+    height: 10rem;
+    font-family: Gwendolyn;
+    font-size: 15rem;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    margin-bottom: 15%;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary--sub {
+    display: block;
     text-transform: uppercase;
-    font-size: 60px;
-    font-weight: 500;
-    letter-spacing: 5px;
+    font-size: 5.5rem;
+    font-weight: 400;
+    letter-spacing: 0.8rem;
+
+    animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translateX(-2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* ---- Grid Layout ---- */
+.row {
+    max-width: var(--grid-width);
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+}
+.row:not(:last-child):after {
+    margin-bottom: 8rem;
+}
+
+.col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+    background-color: royalblue;
+    float: left;
+}
+.col-1-of-2:not(:last-child){
+    margin-right: var(--gutter-horizontal);
+}
+.col-1-of-3 {
+    width: calc((100% - (6rem * 2)) / 3);
+    background-color: royalblue;
+    float: left;
+}
+.col-1-of-3:not(:last-child){
+    margin-right: var(--gutter-horizontal);
+}
+.col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem ) / 3) + 6rem);
+    background-color: royalblue;
+    float: left;
+}
+.col-1-of-4 {
+    width: calc((100% - (6rem * 3)) / 4);
+    background-color: royalblue;
+    float: left;
+}
+.col-1-of-4:not(:last-child){
+    margin-right: var(--gutter-horizontal);
+}
+.col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem ) / 4) + 6rem);
+    background-color: royalblue;
+    float: left;
+}
+.col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem ) / 4) + 2 * 6rem);
+    background-color: royalblue;
+    float: left;
 }
