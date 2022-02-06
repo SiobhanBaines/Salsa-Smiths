@@ -7,7 +7,9 @@
     /* COLOURS */
     --text-black: #080404;
     --light-green: #bbdab3cc;
+    --light-blue: #e6e8fccc;
     --mid-blue: #061064cc;
+    --light-orange: #f1e2c0;
     --mid-orange: rgba(248, 197, 87, 0.714);
     --mid-yellow: rgba(251, 234, 4, 0.8);
 
@@ -91,23 +93,67 @@ body {
     animation: moveInRight 1s ease-out;
 }
 
+.location,
+.gallery,
+.contact,
+.covid {
+    height: 100vh;
+}
+.location {
+    top: -25vh;
+    background-color: var(--light-blue);
+    clip-path: polygon(0 0, 100% -25vh, 100% 75vh, 0 100%);
+}
+.location__content {
+    top: 25vh;
+}
+.gallery {
+    background-color: var(--light-orange);
+    clip-path: polygon(0 0, 100% -25vh, 100% 75vh, 0 100%);
+}
+
 .carousel {
     width: 24%;
     height: auto;
     margin-left: 38%;
 }
-
 .form-heading {
-    /* height: 7rem; */
     font-family: Gwendolyn;
     font-size: 7rem;
     font-weight: 700;
-    /* letter-spacing: 0.2rem; */
-    /* margin-bottom: 10%; */
 }
-
-.contact-page {
+.contact {
     height: 97vh;
+    background-image: linear-gradient(to right bottom,
+            var(--mid-yellow),
+            var(--bright-red)),
+        url(../images/2118298.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.form-control,
+.form-label {
+    margin-left: 12.5%;
+    width: 75%;
+
+}
+.covid {
+    background-color: var(--light-green);
+    clip-path: polygon(0 0, 100% -25vh, 100% 75vh, 0 100%);
+}
+.covid {
+    position: relative;
+}
+.covid-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+footer {
     background-image: linear-gradient(to right bottom,
             var(--mid-yellow),
             var(--bright-red)),
@@ -115,26 +161,28 @@ body {
     background-size: cover;
     background-position: top;
     position: relative;
-
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-
-.form-control,
-.form-label {
-    margin-left: 12.5%;
-    width: 75%;
-
+.inline-block {
+    display: inline-block;
+  }
+a {
+    color: #080404;
 }
-
-.covid {
+footer ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+.footer ul li {
+    margin-top: 12px;
+    padding: 0;
+}
+.social-media {
+    font-size: 25px;
+    font-weight: bold;
     position: relative;
-}
-
-.covid-text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 @keyframes moveInLeft {
