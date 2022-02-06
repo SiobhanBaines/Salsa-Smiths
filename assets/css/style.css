@@ -35,12 +35,9 @@ body {
     height: 97vh;
     background-image: linear-gradient(
         to right bottom, 
-        var(--light-green),
-        var(--mid-blue)),
-        /* rgba(187, 218, 179, 0.8), 
-        rgba(6, 16, 100, 0.8)),  */
-        /* rgba(248, 197, 87, 0.714), 
-        rgba(248, 45, 45, 0.8)),  */
+        rgba(248, 121, 121, 0.966),
+        rgba(110, 119, 201, 0.897)), 
+       
         url(../images/hero.jpg);
     background-size: cover;
     background-position: top;
