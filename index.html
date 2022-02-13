@@ -9,8 +9,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
 
     <link
         href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap"
@@ -59,10 +59,10 @@
             </div>
         </nav> -->
 
-        <section class="location">
+        <section class="location container">
             <div class="location__content">
                 <div class="u-center-text">
-                    <h2 class="page-heading">Location</h2>
+                    <h2 class="page-heading">&nbspLocation</h2>
                 </div>
                 <div class="container">
                     <div class="row  justify-content-center">
@@ -86,26 +86,27 @@
                                             <p class="venue-address my-0">Nippet Lane</p>
                                             <p class="venue-address mb-0">Leeds</p>
                                             <p class="venue-address mb-0">LS9 7TB</p>
-                                            <!-- <input type="hidden" id="lat-{{ forloop.counter }}" name="lat" value="53.80118">
-                                        <input type="hidden" id="lng-{{ forloop.counter }}" name="lng" value="-1.52455"> -->
-                                        </div>
-                                        <!-- Image of venue -->
-                                        <div class="text-center col-sm-12 col-md-6 mb-2">
-                                            <!--image-->
-                                            <div class="image-container venue">
-                                                <a href="http://www.leedsanglersclub.co.uk/index.php">
-                                                    <img class="card-img-bottom img-fluid img-thumbnail"
-                                                        src="assets/images/anglers.jpg" alt="Anglers Club">
-                                                </a>
+
+                                            <!-- Image of venue -->
+                                            <div class="text-center col-sm-12 col-md-6 mb-2">
+                                                <!--image-->
+                                                <div class="image-container">
+                                                    <a href="http://www.leedsanglersclub.co.uk/index.php">
+                                                        <img class="card-img-bottom img-fluid img-thumbnail"
+                                                            src="assets/images/anglers.jpg" alt="Anglers Club">
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Map showing venue location -->
-                                    <!-- <div class="row text-center">
-                                <div class="col">
-                                    <div class="maps" id="map-{{ forloop.counter }}"></div>
-                                </div>
-                            </div> -->
+                                    <div class="row text-center">
+                                        <div class="col">
+                                            <div class="maps" id="map-angler">Anglers</div>
+                                            <input type="hidden" id="lat-angler" name="lat-angler" value="53.80118">
+                                            <input type="hidden" id="lng-angler" name="lng-angler" value="-1.52455">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -124,18 +125,11 @@
                                             <p class="class mb-0">8:00pm - Improvers</p>
                                             <p class="class mb-0">8:30pm - Beginners & Advanced</p>
                                             <p class="class mb-0">9:30pm - Social dancing until close</p>
-                                            <input type="hidden" id="lat-{{ forloop.counter }}" name="lat"
-                                                value="53.80118">
-                                            <input type="hidden" id="lng-{{ forloop.counter }}" name="lng"
-                                                value="-1.52455">
                                             <p class="venue-address fw-bold my-1">Address</p>
                                             <p class="venue-address mb-0">Leeds Road</p>
                                             <p class="venue-address mb-0">Tingley</p>
                                             <p class="venue-address mb-0">WF12 7JL</p>
-                                            <!-- <input type="hidden" id="lat-{{ forloop.counter }}" name="lat"
-                                                value="53.72251">
-                                            <input type="hidden" id="lng-{{ forloop.counter }}" name="lng"
-                                                value="-1.58864"> -->
+
                                         </div>
                                         <!-- Image of venue -->
                                         <div class="text-center col-sm-12 col-md-6 mb-2">
@@ -149,85 +143,80 @@
                                         </div>
                                     </div>
                                     <!-- Map showing venue location -->
-                                    <!-- <div class="row text-center">
-                                <div class="col">
-                                    <div class="maps" id="map-{{ forloop.counter }}"></div>
-                                </div>
-                            </div>
-                        </div> -->
+                                    <div class="row text-center">
+                                        <div class="col">
+                                            <div class="maps" id="map-Woodkirk">Woodkirk</div>
+                                            <input type="hidden" id="lat-woodkirk" name="lat-woodkirk" value="53.72251">
+                                            <input type="hidden" id="lng-woodkirk" name="lng-woodkirk" value="-1.58864">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery container">
             <div class="u-center-text">
-                <h2 class="page-heading">Gallery</h2>
+                <h2 class="page-heading">&nbspGallery</h2>
             </div>
-            <!-- <div id="carouselCS" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item carousel-size active" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-1.jpg" class="d-block w-100" alt="image_1">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-2.jpg" class="d-block w-100" alt="image_2">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-3.jpg" class="d-block w-100" alt="image_3">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-4.jpg" class="d-block w-100" alt="image_4">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-5.jpg" class="d-block w-100" alt="image_5">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-6.jpg" class="d-block w-100" alt="image_6">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-7.jpg" class="d-block w-100" alt="image_7">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-8.jpg" class="d-block w-100" alt="dance_8">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="3000">
-                    <img src="assets/images/dancing/dance-9.jpg" class="d-block w-100" alt="dance_9">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-10.jpg" class="d-block w-100" alt="dance_10">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-11.jpg" class="d-block w-100" alt="dance_11">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-12.jpg" class="d-block w-100" alt="dance_12">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-13.jpg" class="d-block w-100" alt="dance_13">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-14.jpg" class="d-block w-100" alt="dance_14">
-                </div>
-                <div class="carousel-item carousel-size" data-bs-interval="2000">
-                    <img src="assets/images/dancing/dance-15.jpg" class="d-block w-100" alt="dance_15">
+            <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-size active" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-1.jpg" class="d-block w-100 photo" alt="dance_1">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-2.jpg" class="d-block w-100 photo alt="dance_2">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-3.jpg" class="d-block w-100 photo" alt="dance_3">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-4.jpg" class="d-block w-100 photo" alt="dance_4">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-5.jpg" class="d-block w-100 photo" alt="dance_5">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-6.jpg" class="d-block w-100 photo" alt="dance_6">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-7.jpg" class="d-block w-100 photo" alt="dance_7">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-8.jpg" class="d-block w-100 photo" alt="dance_8">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="3000">
+                        <img src="assets/images/dancing/dance-9.jpg" class="d-block w-100 photo" alt="dance_9">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-10.jpg" class="d-block w-100 photo" alt="dance_10">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-11.jpg" class="d-block w-100 photo" alt="dance_11">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-12.jpg" class="d-block w-100 photo" alt="dance_12">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-13.jpg" class="d-block w-100 photo" alt="dance_13">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-14.jpg" class="d-block w-100 photo" alt="dance_14">
+                    </div>
+                    <div class="carousel-item carousel-size" data-bs-interval="1000">
+                        <img src="assets/images/dancing/dance-15.jpg" class="d-block w-100" alt="dance_15">
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCS" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCS" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
         </section>
-        <section class="contact">
+
+        <section class="contact container">
             <div class="u-center-text">
-                <h2 class="page-heading">Contact</h2>
+                <h2 class="page-heading">&nbspContact</h2>
             </div>
             <form class="contact-form mt-5">
                 <label class="form-label" for="fullname">Name</label>
@@ -248,9 +237,9 @@
                 </div>
             </form>
         </section>
-        <section class="covid">
+        <section class="covid container">
             <div class="u-center-text">
-                <h2 class="page-heading">Covid</h2>
+                <h2 class="page-heading">&nbspCovid</h2>
             </div>
             <div class="covid-rules">
                 <div class="covid-text-box">
@@ -302,10 +291,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-<!-- <script> var APIKey = 'AIzaSyBvOji9Tszt3e2Oh_f18jb4YPe2fO-_fhY'</script>
+<script> var APIKey = 'AIzaSyBvOji9Tszt3e2Oh_f18jb4YPe2fO-_fhY'</script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvOji9Tszt3e2Oh_f18jb4YPe2fO-_fhY&callback=initMap"></script>
-<script src="{% static 'venues/js/maps.js' %}"></script> -->
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvOji9Tszt3e2Oh_f18jb4YPe2fO-_fhY&callback=initMapAnglers"></script>
+<script src="assets/js/location.js"></script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvOji9Tszt3e2Oh_f18jb4YPe2fO-_fhY&callback=initMapWoodkirk"></script>
+<script src="assets/js/location.js"></script>
 
 </html>

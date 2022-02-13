@@ -1,33 +1,22 @@
 // Initialize and add the map
     // Credit to Simen Daehlin for his help in getting this working
 
-    function initMap() {
-        // location of church
-        const churchLat = parseFloat(document.getElementById('lat-1').value);
-        const churchLng = parseFloat(document.getElementById('lng-1').value);
-        // location of reception
-        const receptionLat = parseFloat(document.getElementById('lat-2').value);
-        const receptionLng = parseFloat(document.getElementById('lng-2').value);
+    function initMapAngler() {
+        // location of Anglers
+        const anglerLat = parseFloat(document.getElementById('lat-angler').value);
+        const anglerLng = parseFloat(document.getElementById('lng-angler').value);
         const options = [{
             // church
                 zoom: 13,
                 center: {
-                    lat: churchLat,
-                    lng: churchLng,
-                },
-            },
-            {
-            // reception
-                zoom: 13,
-                center: {
-                    lat: receptionLat,
-                    lng: receptionLng,
+                    lat: anglerLat,
+                    lng: anglerLng,
                 },
             },
         ];
         // Position marker
-        for (let i = 0; i < options.length; i++) {
-            const map = new google.maps.Map(document.getElementById(`map-${i + 1}`), options[i]);
+        // for (let i = 0; i < options.length; i++) {
+        //     const map = new google.maps.Map(document.getElementById(`map-${i + 1}`), options[i]);
             const marker = new google.maps.Marker({
                 position: {
                     lat: options[i].center.lat,
@@ -37,5 +26,36 @@
                 },
             });
             marker.setMap(map)
-        }
+        // }
+    }
+    // Initialize and add the map
+    // Credit to Simen Daehlin for his help in getting this working
+
+    function initMapWoodkirk() {
+        // location of church
+        const woodkirkLat = parseFloat(document.getElementById('lat-woodkirk').value);
+        const woodkikrLng = parseFloat(document.getElementById('lng-woodkirk').value);
+       
+        const options = [{
+            // church
+                zoom: 13,
+                center: {
+                    lat: woodkirkLat,
+                    lng: woodkirkLng,
+                },
+            },
+        ];
+        // Position marker
+        // for (let i = 0; i < options.length; i++) {
+        //     const map = new google.maps.Map(document.getElementById(`map-${i + 1}`), options[i]);
+            const marker = new google.maps.Marker({
+                position: {
+                    lat: options[i].center.lat,
+                    lng: options[i].center.lng,
+                    icon: options[i].icon,
+                    map,
+                },
+            });
+            marker.setMap(map)
+        // }
     }
