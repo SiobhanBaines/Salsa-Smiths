@@ -110,22 +110,54 @@ body {
 }
 
 .location,
-.gallery,
-.contact,
-.covid {
+.contact {
     padding: 25rem 0;
-    margin-top: -23vh;
-}
-
-.location {
+    margin-top: -23rem;
+    margin-bottom 35rem;
+    height: 115vh;
     background-color: var(--light-grey);
 }
 
-.location__content {
+.gallery {
+    padding: 25rem 0;
+    margin-top: -13rem;
+    height: 110vh;
+    background-color: var(--dark-grey);
+    transform: skewY(-7deg);
+}
+.covid {
+    padding: 5rem 0;
+    margin-top: -13rem;
+    height: 50vh;
+    background-color: var(--dark-grey);
+
+    /* clip-path: polygon(0 25%, 100% 0 100% 100%, 0 100%); */
+}
+/* .location,
+.contact {
+    background-color: var(--light-grey);
+    
+} */
+
+.card {
+    padding: 5rem;
+    transition: transform .3s;
+}
+.card:hover {
+    transform: translateY(-1.5rem) scale(1.03);
 }
 
-.gallery {
+/* .gallery,
+.covid {
     background-color: var(--dark-grey);
+    transform: skewY(-7deg);
+} */
+.contact-content {
+    /* padding: 25rem 0; */
+    margin-top: 4rem;
+}
+.gallery-content {
+    transform: skewY(7deg);
 }
 .carousel {
     width: 50%;
@@ -140,30 +172,26 @@ body {
     /* position: absolute; */
 }
 
-.contact {
-    background-color: var(--mid-grey);
-}
-
 .form-control,
 .form-label {
     margin-left: 12.5%;
     width: 75%;
-
 }
 
-.covid {
+/* .covid {
     background-color: var(--light-grey);
-}
+} */
 
-.covid {
+.covid-rules {
+    margin-top: 10rem;
     position: relative;
 }
 
 .covid-text-box {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 30%;
+    transform: translate(-15%, -25%);
 }
 
 footer {

@@ -1,12 +1,13 @@
 // Initialize and add the map
     // Credit to Simen Daehlin for his help in getting this working
+    // function initMapAngler() {
 
-    function initMapAngler() {
+    function initMap() {
         // location of Anglers
         const anglerLat = parseFloat(document.getElementById('lat-angler').value);
         const anglerLng = parseFloat(document.getElementById('lng-angler').value);
         const options = [{
-            // church
+            // anglers
                 zoom: 13,
                 center: {
                     lat: anglerLat,
@@ -27,11 +28,11 @@
             });
             marker.setMap(map)
         // }
-    }
+    // }
     // Initialize and add the map
     // Credit to Simen Daehlin for his help in getting this working
 
-    function initMapWoodkirk() {
+    // function initMapWoodkirk() {
         // location of church
         const woodkirkLat = parseFloat(document.getElementById('lat-woodkirk').value);
         const woodkikrLng = parseFloat(document.getElementById('lng-woodkirk').value);
