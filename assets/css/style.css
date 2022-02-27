@@ -12,8 +12,6 @@
     --dark-grey: #3b3b3b;
     --mid-orange: rgba(248, 197, 87, 0.714);
     --mid-yellow: rgba(251, 234, 4, 0.8);
-
-    --mid-yellow: rgba(255, 255, 51, 0.918);
     --bright-red: rgba(248, 45, 45, 0.8);
     --red: #ff0000;
 }
@@ -109,62 +107,12 @@ body {
     color: transparent;
 }
 
+/* --- Location --- */
 .location {
-    padding: 20rem 0;
+    padding: 15rem 0 35rem 0;
     margin-top: -13rem;
-    height: 115vh;
+    height: 150vh;
     background-color: var(--light-grey);
-}
-
-.contact {
-    padding: 10rem 0;
-    position: relative;
-    background-color: var(--light-grey);
-    margin-top: -7rem;
-    height: 100vh;
-    transform: skewY(-5deg);
-}
-
-.contact-content {
-    transform: skewY(5deg);
-    position: relative;
-}
-
-.contact-box {
-    position: absolute;
-    text-align: center;
-    left: 1rem;
-    width: 60rem;
-    vertical-align: middle;
-    padding: 10rem 0;
-}
-
-.contact-me {
-    font-size: 4rem;
-    font-weight: 400;
-}
-
-.form-control {
-    font-size: 2.5rem;
-}
-
-.gallery {
-    padding: 15rem 0;
-    margin-top: -7rem;
-    margin-bottom: 7rem;
-    height: 110vh;
-    background-color: var(--dark-grey);
-    transform: skewY(-5deg);
-}
-
-.covid {
-    margin-top: -8rem;
-    margin-bottom: 7rem;
-    color: var(--light-grey);
-    height: 80vh;
-    background-color: var(--dark-grey);
-
-    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
 }
 
 .card {
@@ -176,13 +124,21 @@ body {
     transform: translateY(-1.5rem) scale(1.03);
 }
 
-.send-btn {
-    line-height: 2;
-    font-size: 2rem;
-    font-weight: bold;
-    background-image: linear-gradient(to right, var(--mid-yellow), var(--bright-red));
-    border-color: var(--dark-grey);
-    color: var(--dark-grey);
+/* .maps {
+    z-index: 9999;
+    height: 400px;
+    width: 100%;
+} */
+
+
+/* --- Gallery --- */
+.gallery {
+    padding: 5rem 0;
+    margin-top: -8rem;
+    margin-bottom: 7rem;
+    height: 110vh;
+    background-color: var(--dark-grey);
+    transform: skewY(-5deg);
 }
 
 .gallery-content {
@@ -201,10 +157,63 @@ body {
     border: 1px solid var(--near-black);
 }
 
+/*  --- Contact --- */
+.contact {
+    padding: 5rem 0;
+    position: relative;
+    background-color: var(--light-grey);
+    margin-top: -7rem;
+    height: 110vh;
+    transform: skewY(-5deg);
+}
+
+.contact-content {
+    transform: skewY(5deg);
+    position: relative;
+}
+
+.contact-box {
+    position: absolute;
+    text-align: center;
+    left: 1rem;
+    width: 40rem;
+    vertical-align: middle;
+    padding: 10rem 0;
+}
+
+.contact-me {
+    /* font-size: 3rem; */
+    font-weight: 400;
+}
+
+.form-control {
+    font-size: 1.5rem;
+}
+
 .form-control,
 .form-label {
     margin-left: 12.5%;
-    width: 75%;
+    width: 80%;
+}
+
+.send-btn {
+    /* line-height: 1.5;
+    font-size: 1rem; */
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--mid-yellow), var(--bright-red));
+    border-color: var(--dark-grey);
+    color: var(--dark-grey);
+}
+
+/*  --- Covid ---  */
+.covid {
+    margin-top: -10rem;
+    margin-bottom: 10rem;
+    color: var(--light-grey);
+    height: 100vh;
+    background-color: var(--dark-grey);
+
+    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
 }
 
 .covid-content {
@@ -219,10 +228,11 @@ body {
 .covid-text-box {
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 20%;
     transform: translate(-15%, -25%);
 }
 
+/* --- Footer --- */
 footer {
     margin-top: -13rem;
     background-image: linear-gradient(to right bottom, var(--near-black),

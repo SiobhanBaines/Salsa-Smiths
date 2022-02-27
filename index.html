@@ -56,12 +56,12 @@
         </nav> -->
 
         <section class="location">
-
             <div class="u-center-text">
                 <h2 class="page-heading">&nbspLocation</h2>
             </div>
             <div class="container">
                 <div class="row  justify-content-center">
+                    <!-- {% for location in locations %} -->
                     <div class="col-sm-12 col-md-6 mb-5">
                         <div class="card h-100 border-5 justify-content-center">
                             <h3 class="text-center cursive-text-color fs-1 fw-bold">Anglers Club</h3>
@@ -82,6 +82,8 @@
                                         <p class="venue-address my-0 fs-5">Nippet Lane</p>
                                         <p class="venue-address mb-0 fs-5">Leeds</p>
                                         <p class="venue-address mb-0 fs-5">LS9 7TB</p>
+                                        <!-- <input type="hidden" id="lat-1" name="lat" value="53.80118">
+                                        <input type="hidden" id="lng-1" name="lng" value="-1.52455"> -->
                                     </div>
                                     <!-- Image of venue -->
                                     <div class="text-center col-sm-12 col-md-6 mb-2">
@@ -93,14 +95,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Map showing venue location -->
-                            <div class="row text-center">
-                                <div class="col">
-                                    <div class="maps" id="map-angler">Anglers</div>
-                                    <input type="hidden" id="lat-angler" name="lat-angler" value="53.80118">
-                                    <input type="hidden" id="lng-angler" name="lng-angler" value="-1.52455">
-                                </div>
+                                <!-- Map showing venue location -->
+                                <!-- <div class="row text-center">
+                                    <div class="col">
+                                        <div class="maps" id="map-1">Anglers</div>
+                                        <div class="maps" id="map-1"></div>
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -123,7 +124,8 @@
                                         <p class="venue-address mb-0 fs-5">Leeds Road</p>
                                         <p class="venue-address mb-0 fs-5">Tingley</p>
                                         <p class="venue-address mb-0 fs-5">WF12 7JL</p>
-
+                                        <!-- <input type="hidden" id="lat-2" name="lat" value="53.72251">
+                                        <input type="hidden" id="lng-2" name="lng" value="-1.58864"> -->
                                     </div>
                                     <!-- Image of venue -->
                                     <div class="text-center col-sm-12 col-md-6 mb-2">
@@ -135,21 +137,20 @@
                                     </div>
                                 </div>
                                 <!-- Map showing venue location -->
-                                <div class="row text-center">
+                                <!-- <div class="row text-center">
                                     <div class="col">
-                                        <div class="maps" id="map-Woodkirk">Woodkirk</div>
-                                        <input type="hidden" id="lat-woodkirk" name="lat-woodkirk" value="53.72251">
-                                        <input type="hidden" id="lng-woodkirk" name="lng-woodkirk" value="-1.58864">
+                                        <div class="maps" id="map-2">Woodkirk</div>
+                                        <div class="maps" id="map-2"></div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
+                    <!-- {% endfor %} -->
                 </div>
             </div>
             </div>
         </section>
-
         <section class="gallery">
             <div class="gallery-content">
                 <div class="u-center-text">
@@ -208,7 +209,6 @@
                 </div>
             </div>
         </section>
-
         <section class="contact">
             <div class="contact-content">
                 <div class="u-center-text">
@@ -217,25 +217,25 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-4">
                         <div class="contact-box">
-                            <p class="contact-me mx-3">Have any questions?</p>
-                            <p class="contact-me mx-3">Please call me (Om) on </p>
-                            <p class="contact-me mx-3">07710 123132</p>
+                            <p class="contact-me mx-3 fs-1">Have any questions?</p>
+                            <p class="contact-me mx-3 fs-1">Please call me (Om) on </p>
+                            <p class="contact-me mx-3 fs-1">07710 123132</p>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-md-8">
                         <form class="contact-form">
-                            <label class="form-label fs-1" for="fullname">Name</label>
+                            <label class="form-label fs-2" for="fullname">Name</label>
                             <input type="text" name="fullname" id="fullname" class="form-control" required />
-                            <label class="form-label fs-1" for="phone">Phone</label>
+                            <label class="form-label fs-2" for="phone">Phone</label>
                             <input type="tel" name="phone" id="phone" pattern="[0-9]" class="form-control" required />
-                            <label class="form-label fs-1" for="emailaddress">Email</label>
+                            <label class="form-label fs-2" for="emailaddress">Email</label>
                             <input type="email" name="emailaddress" id="emailaddress" class="form-control" required />
-                            <label class="form-label fs-1" for="contact-reason">Question</label>
+                            <label class="form-label fs-2" for="contact-reason">Question</label>
                             <textarea rows="3" name="contact-reason" id="contact-reason" class="form-control" required></textarea>
                             <div class="form-row text-center">
                                 <div class="col mt-5">
-                                    <button type="submit" class="btn btn-secondary send-btn" onclick="mailto:baines.smb@gmail.com">Send
+                                    <button type="submit" class="btn btn-secondary send-btn fs-1" onclick="mailto:baines.smb@gmail.com">Send
                                         Request</button>
                                     <!-- <button type="submit" class="btn btn-secondary send-btn"
                                         onclick="mailto:homme.smith@gmail.com">Send Request</button> -->
@@ -257,7 +257,7 @@
                             <h3 class="covid-title fs-1">Please take a lateral flow test the day of the class or social</h3>
                             <p class="covid-info fs-2">If you are fully vaccinated that would be great. We are aware this does not
                                 prevent transmission but it does give a level of comfort to many fellow dancers.</p>
-                            <p class="covid-info fw-bold fs-1">IF YOU HAVE ANY SYMPTOMS OF A COLD OR ILLNESS, BE HONEST TO ALL OF
+                            <p class="covid-info fw-bold fs-2">IF YOU HAVE ANY SYMPTOMS OF A COLD OR ILLNESS, BE HONEST TO ALL OF
                                 YOUR
                                 FELLOW DANCERS AND DO NOT ATTEND UNTIL YOU FEEL WELL.</p>
                             <p class="covid-info fs-2">We will have a sign in sheet (name,email, telephone number) so that if there
