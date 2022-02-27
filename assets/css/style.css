@@ -9,7 +9,7 @@
     --near-black: hsla(0, 33%, 2%, 0.801);
     --light-grey: #d6d2d2;
     --mid-grey: #9e9ea0cc;
-    --dark-grey: #3b3b3bcc;
+    --dark-grey: #3b3b3b;
     --mid-orange: rgba(248, 197, 87, 0.714);
     --mid-yellow: rgba(251, 234, 4, 0.8);
 
@@ -45,7 +45,7 @@ body {
     background-position: top;
     position: relative;
 
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
 }
 
 .header__logo-box {
@@ -109,67 +109,96 @@ body {
     color: transparent;
 }
 
-.location,
-.contact {
-    padding: 25rem 0;
-    margin-top: -23rem;
-    margin-bottom 35rem;
+.location {
+    padding: 20rem 0;
+    margin-top: -13rem;
     height: 115vh;
     background-color: var(--light-grey);
 }
 
+.contact {
+    padding: 10rem 0;
+    position: relative;
+    background-color: var(--light-grey);
+    margin-top: -7rem;
+    height: 100vh;
+    transform: skewY(-5deg);
+}
+
+.contact-content {
+    transform: skewY(5deg);
+    position: relative;
+}
+
+.contact-box {
+    position: absolute;
+    text-align: center;
+    left: 1rem;
+    width: 60rem;
+    vertical-align: middle;
+    padding: 10rem 0;
+}
+
+.contact-me {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.form-control {
+    font-size: 2.5rem;
+}
+
 .gallery {
-    padding: 25rem 0;
-    margin-top: -13rem;
+    padding: 15rem 0;
+    margin-top: -7rem;
+    margin-bottom: 7rem;
     height: 110vh;
     background-color: var(--dark-grey);
-    transform: skewY(-7deg);
+    transform: skewY(-5deg);
 }
+
 .covid {
-    padding: 5rem 0;
-    margin-top: -13rem;
-    height: 50vh;
+    margin-top: -8rem;
+    margin-bottom: 7rem;
+    color: var(--light-grey);
+    height: 80vh;
     background-color: var(--dark-grey);
 
-    /* clip-path: polygon(0 25%, 100% 0 100% 100%, 0 100%); */
+    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
 }
-/* .location,
-.contact {
-    background-color: var(--light-grey);
-    
-} */
 
 .card {
     padding: 5rem;
     transition: transform .3s;
 }
+
 .card:hover {
     transform: translateY(-1.5rem) scale(1.03);
 }
 
-/* .gallery,
-.covid {
-    background-color: var(--dark-grey);
-    transform: skewY(-7deg);
-} */
-.contact-content {
-    /* padding: 25rem 0; */
-    margin-top: 4rem;
+.send-btn {
+    line-height: 2;
+    font-size: 2rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--mid-yellow), var(--bright-red));
+    border-color: var(--dark-grey);
+    color: var(--dark-grey);
 }
+
 .gallery-content {
-    transform: skewY(7deg);
+    transform: skewY(5deg);
 }
+
 .carousel {
     width: 50%;
     height: auto;
     margin-left: 25%;
-    /* position: relative; */
 }
+
 .photo {
-    /* box-shadow: 0 12rem 4rem rgba(var(--text-black), 1); */
+    box-shadow: 0 12rem 4rem rgba(var(--text-black), 1);
     border-radius: 2px;
     border: 1px solid var(--near-black);
-    /* position: absolute; */
 }
 
 .form-control,
@@ -178,23 +207,24 @@ body {
     width: 75%;
 }
 
-/* .covid {
-    background-color: var(--light-grey);
-} */
+.covid-content {
+    padding: 13rem 0;
+}
 
 .covid-rules {
-    margin-top: 10rem;
+    margin: 7rem 0;
     position: relative;
 }
 
 .covid-text-box {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 25%;
     transform: translate(-15%, -25%);
 }
 
 footer {
+    margin-top: -13rem;
     background-image: linear-gradient(to right bottom, var(--near-black),
             var(--near-black)), url(../images/hero.jpg);
     background-size: cover;
@@ -229,7 +259,7 @@ footer ul {
 }
 
 .social-media {
-    font-size: 25px;
+    font-size: 3.5rem;
     font-weight: bold;
     position: relative;
     text-align: center;
