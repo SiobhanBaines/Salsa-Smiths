@@ -22,6 +22,7 @@
 html {
     /* default px is 16px ours is 10px. %age = 10/16= .625 or 62.5%*/
     font-size: 62.5%;
+
 }
 
 body {
@@ -237,7 +238,7 @@ body {
 .location {
     padding: 15rem 0 35rem 0;
     margin-top: -13rem;
-    height: 115vh;
+    height: 140vh;
     background-color: var(--light-grey);
 }
 
@@ -250,6 +251,10 @@ body {
     transform: translateY(-1.5rem) scale(1.03);
 }
 
+.image-container {
+    padding: 1rem 2rem;
+    border: #140a0a 1px solid;
+}
 
 /* .maps {
     z-index: 9999;
@@ -263,22 +268,36 @@ body {
     padding: 5rem 0;
     margin-top: -8rem;
     margin-bottom: 7rem;
-    height: 95vh;
+    height: 100vh;
     background-color: var(--dark-grey);
     transform: skewY(-5deg);
+    position: relative;
 }
 
 .gallery-content {
     transform: skewY(5deg);
+
 }
+
+.gallery-images {
+    padding: 5rem 0;
+}
+
+/* .container.gallery-container {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
 
 .carousel {
     width: 50%;
     height: auto;
     margin-left: 25%;
+
 }
 
-.photo {
+*/ .photo {
     box-shadow: 0 12rem 4rem rgba(var(--text-black), 1);
     border-radius: 2px;
     border: 1px solid var(--near-black);
@@ -290,13 +309,17 @@ body {
     position: relative;
     background-color: var(--light-grey);
     margin-top: -7rem;
-    height: 95vh;
+    height: 100vh;
     transform: skewY(-5deg);
 }
 
 .contact-content {
     transform: skewY(5deg);
     position: relative;
+}
+
+.contact-details {
+    padding: 5rem 0;
 }
 
 .contact-box {
@@ -309,7 +332,6 @@ body {
 }
 
 .contact-me {
-    /* font-size: 3rem; */
     font-weight: 400;
 }
 
@@ -324,8 +346,6 @@ body {
 }
 
 .send-btn {
-    /* line-height: 1.5;
-    font-size: 1rem; */
     font-weight: bold;
     background-image: linear-gradient(to right, var(--mid-yellow), var(--bright-red));
     border-color: var(--dark-grey);
@@ -349,6 +369,7 @@ body {
 
 .covid-rules {
     margin: 7rem 0;
+    padding-top: 8rem;
     position: relative;
 }
 
@@ -432,5 +453,111 @@ footer ul {
     100% {
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+/* @media (max-width: 600px) {
+    html {
+        /* default px is 16px ours is 10px. %age = 10/16= .625 or 62.5%*/
+/* font-size: 25%;
+    } */
+/* } */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading-primary--main {
+        height: 15rem;
+    }
+
+    .location {
+        height: 125vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 40%;
+    }
+
+    .header {
+        clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    }
+
+    .heading-primary--main {
+        height: 15rem;
+    }
+
+    .location {
+        height: 100vh;
+    }
+
+    .gallery {
+        height: 75vh;
+    }
+
+    .contact {
+        height: 70vh;
+    }
+
+    .covid {
+        height: 68vh;
+        clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
+    }
+
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 40%;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 25%;
+    }
+
+    .header {
+        height: 75vh;
+        clip-path: polygon(0 0, 100% 0, 100% 72vh, 0 100%);
+    }
+
+    .heading-primary--main {
+        height: 35rem;
+    }
+
+    .location {
+        height: 100vh;
+        margin-top: -10rem;
+    }
+
+    .gallery {
+        height: 35vh;
+    }
+
+    .contact {
+        height: 60vh;
+    }
+
+    .contact-box {
+        padding: 5rem 0;
+        position: relative;
+        left: 25%;
+    }
+
+    .covid {
+        height: 45vh;
+        clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
     }
 }
