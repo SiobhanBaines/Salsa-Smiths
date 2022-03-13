@@ -65,7 +65,13 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 50%;
 }
+
+/* 
+.heading-primary {
+    width: 100%;
+} */
 
 .heading-primary--main {
     display: block;
@@ -468,6 +474,10 @@ footer ul {
         font-size: 50%;
     }
 
+    .header__text-box {
+        width: 40%;
+    }
+
     .heading-primary--main {
         height: 15rem;
     }
@@ -484,6 +494,10 @@ footer ul {
 
     .header {
         clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    }
+
+    .header__text-box {
+        width: 40%;
     }
 
     .heading-primary--main {
@@ -509,23 +523,76 @@ footer ul {
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
     html {
-        font-size: 40%;
+        font-size: 50%;
+    }
+
+    .header__text-box {
+        width: 65%;
     }
 
 }
 
+/* @media (max-width: 767px) {
+    html {
+        font-size: 30%;
+    }
+
+    .header__text-box {
+        width: 48%;
+    }
+
+} */
 
 @media (max-width: 700px) {
     html {
         font-size: 30%;
     }
+
+    .header__text-box {
+        width: 45%;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 575px) {
     html {
-        font-size: 25%;
+        /* font-size: 25%; */
+        font-size: 40%;
+    }
+
+    .header__text-box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 30%;
+    }
+
+    .header__text-box {
+        width: 81%;
+    }
+
+    .location {
+        height: 90vh;
+        margin-top: -10rem;
+    }
+
+    .contact {
+        height: 50vh;
+    }
+
+    .covid {
+        height: 35vh;
+        clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 27.5%;
     }
 
     .header {
@@ -533,12 +600,12 @@ footer ul {
         clip-path: polygon(0 0, 100% 0, 100% 72vh, 0 100%);
     }
 
-    .heading-primary--main {
-        height: 35rem;
+    .header__text-box {
+        width: 81%;
     }
 
     .location {
-        height: 100vh;
+        height: 105vh;
         margin-top: -10rem;
     }
 
@@ -547,11 +614,11 @@ footer ul {
     }
 
     .contact {
-        height: 60vh;
+        height: 65vh;
     }
 
     .contact-box {
-        padding: 5rem 0;
+        padding: 2rem 0;
         position: relative;
         left: 25%;
     }
