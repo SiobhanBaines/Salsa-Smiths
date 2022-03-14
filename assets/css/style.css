@@ -295,8 +295,8 @@ body {
     margin-left: 25%;
 }
 
-*/ .photo {
-    box-shadow: 0 12rem 4rem rgba(var(--text-black), 1);
+.photo {
+    box-shadow: 0 12rem 4rem rgb(0, 0, 0);
     border-radius: 2px;
     border: 1px solid var(--near-black);
 }
