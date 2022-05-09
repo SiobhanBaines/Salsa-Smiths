@@ -19,12 +19,6 @@
     --red: #ff0000;
 }
 
-html {
-    /* default px is 16px ours is 10px. %age = 10/16= .625 or 62.5%*/
-    font-size: 62.5%;
-
-}
-
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -57,7 +51,7 @@ body {
 }
 
 .header__logo {
-    height: 14rem;
+    height: 10rem;
 }
 
 .header__text-box {
@@ -68,16 +62,14 @@ body {
     width: 50%;
 }
 
-
 .heading-primary {
     width: 100%;
 }
 
 .heading-primary--main {
-    height: 15rem;
-    padding-left: 7rem;
+    height: 11rem;
     font-family: Gwendolyn;
-    font-size: 16rem;
+    font-size: 11rem;
     font-weight: 700;
     letter-spacing: 0.2rem;
     margin-bottom: 10%;
@@ -93,8 +85,8 @@ body {
 
 .heading-primary--sub {
     text-transform: uppercase;
-    padding-left: 8rem;
-    font-size: 7rem;
+    padding-left: 2rem;
+    font-size: 4.5rem;
     font-weight: 400;
     letter-spacing: 0.4rem;
     display: inline-block;
@@ -107,7 +99,7 @@ body {
 
 .page-heading {
     margin-top: -2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 5rem;
     font-family: Gwendolyn;
     font-size: 7rem;
     font-weight: 700;
@@ -125,8 +117,8 @@ body {
 
 .navigation-button {
     background-image: radial-gradient(var(--check-yellow), var(--check-red));
-    height: 11rem;
-    width: 11rem;
+    height: 8rem;
+    width: 8rem;
     position: fixed;
     top: 6rem;
     right: 6rem;
@@ -138,8 +130,8 @@ body {
 }
 
 .navigation-background {
-    height: 10rem;
-    width: 10rem;
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
     position: fixed;
     top: 7rem;
@@ -163,8 +155,8 @@ body {
 
 .navigation-list {
     position: absolute;
-    top: 16%;
-    left: 80%;
+    top: 34%;
+    left: 82%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
@@ -184,7 +176,6 @@ body {
     color: var(--dark-grey);
     text-decoration: none;
     text-transform: uppercase;
-    /* background-image: linear-gradient(120deg, orangered 0%, orangered 50%, var(--light-grey) 50%); */
     background-size: 220%;
 
     transition: all .4s;
@@ -208,13 +199,13 @@ body {
 
 .navigation-icon {
     position: relative;
-    margin-top: 5.1rem;
+    margin-top: 4rem;
 }
 
 .navigation-icon,
 .navigation-icon::before,
 .navigation-icon::after {
-    width: 5rem;
+    width: 4rem;
     height: 4px;
     background-color: var(--dark-grey);
     display: inline-block;
@@ -237,12 +228,11 @@ body {
     top: .8rem;
 }
 
-
 /* --- Location --- */
 .location {
-    padding: 15rem 0 35rem 0;
+    padding: 16rem 0;
     margin-top: -13rem;
-    height: 115vh;
+    height: 135vh;
     background-color: var(--light-grey);
 }
 
@@ -269,10 +259,10 @@ body {
 
 /* --- Gallery --- */
 .gallery {
-    padding: 5rem 0;
+    padding: 7rem 0;
     margin-top: -8rem;
     margin-bottom: 7rem;
-    height: 115vh;
+    height: 105vh;
     background-color: var(--dark-grey);
     transform: skewY(-3deg);
     position: relative;
@@ -301,28 +291,26 @@ body {
 
 /*  --- Contact --- */
 .contact {
-    padding: 15rem 0 0;
+    padding: 11rem 0;
     position: relative;
     background-color: var(--light-grey);
     margin-top: -20rem;
-    height: 80vh;
-    /* transform: skewY(-5deg); */
+    height: 95vh;
     clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
 }
 
 .contact-content {
-    /* transform: skewY(5deg); */
     position: relative;
 }
 
-.contact-details {
-    padding: 5rem 0;
+.contact-form {
+    padding-bottom: 5rem;
 }
 
 .contact-box {
     position: absolute;
     text-align: center;
-    left: 1rem;
+    left: 3rem;
     width: 40rem;
     vertical-align: middle;
     padding: 10rem 0;
@@ -453,29 +441,27 @@ footer ul {
     }
 }
 
-@media (max-width: 1200px) {
-    html {
-        /* default px is 16px ours is 10px. %age = 10/16= .625 or 62.5%*/
-        font-size: 55%;
-
-    }
-
-    .heading-primary--main {
-        padding-left: 0;
-        font-size: 15rem;
+/* @media (max-width: 1400px) { */
+/* .heading-primary--main {
+        padding-left: 5rem;
+        font-size: 20rem;
+        height: 20rem;
     }
 
     .heading-primary--sub {
-        padding-left: 2rem;
-        font-size: 6rem;
-    }
+        padding-left: 6rem;
+        font-size: 9rem;
+    } */
 
-    .location {
+/* .location {
         height: 95vh;
+        padding: 15rem 0;
     }
 
     .gallery {
-        height: 85vh;
+        height: 100vh;
+        padding: 15rem 0;
+        margin-bottom: 0;
     }
 
     .contact {
@@ -483,15 +469,36 @@ footer ul {
     }
 }
 
-/* 
-@media (max-width: 1000px) {
-    html {
-        font-size: 45%;
+@media (max-width: 1200px) {
+    .heading-primary--main {
+        padding-left: 5rem;
+        font-size: 20rem;
+        height: 20rem;
     }
 
+    .heading-primary--sub {
+        padding-left: 6rem;
+        font-size: 9rem;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
     .navigation-nav {
         height: 55vh;
         right: 3rem;
+    }
+
+    .heading-primary--main {
+        padding-left: 0rem;
+        font-size: 12rem;
+        height: 12rem;
+    }
+
+    .heading-primary--sub {
+        padding-left: 0;
+        font-size: 5rem;
     }
 
     .location {
@@ -506,42 +513,42 @@ footer ul {
         height: 70vh;
     }
 
-    .covid {
-        height: 62vh;
-        clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
-    }
+}
 
-} */
-
-/* @media (max-width: 770px) {
-    html {
-        font-size: 40%;
-    }
+@media (max-width: 770px) {
 
     .header__text-box {
-        width: 60%;
+        width: 80%;
+    }
+
+    .heading-primary--main {
+        padding-left: 0rem;
+        font-size: 13rem;
+        height: 13rem;
+    }
+
+    .heading-primary--sub {
+        padding-left: 1rem;
+        font-size: 6rem;
     }
 
     .location {
-        height: 100vh;
+        height: 90vh;
         margin-top: -18rem;
+        padding: 19rem 0;
     }
 
     .gallery {
         height: 70vh;
     }
 
-    .contact-box {
-        padding: 0;
-        left: 35%;
+    .carousel {
+        width: 60%;
+        margin-left: 20%;
     }
+}
 
-    .covid {
-        height: 58vh;
-    }
-} */
-
-/* @media (max-width: 700px) {
+@media (max-width: 700px) {
     .navigation-nav {
         right: 5.5rem;
     }
@@ -551,7 +558,7 @@ footer ul {
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 576px) {
     html {
         font-size: 45%;
     }
@@ -575,9 +582,9 @@ footer ul {
         left: 25%;
     }
 
-} */
+}
 
-/* @media (max-width: 456px) {
+@media (max-width: 456px) {
     html {
         font-size: 38%;
     }
@@ -585,9 +592,9 @@ footer ul {
     .header {
         height: 65vh;
         clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
-    }
+    } */
 
-    /* .header {
+/* .header {
         height: 97vh;
         background-image: linear-gradient(to right bottom, var(--near-black),
                 var(--near-black)), url(../images/hero.jpg);
@@ -597,8 +604,8 @@ footer ul {
     
         clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     } */
-/* 
-    .navigation-nav {
+
+/* .navigation-nav {
         height: 50vh;
         right: 15rem;
     }
@@ -639,16 +646,15 @@ footer ul {
     .contact-box {
         padding: 0;
         left: 25%;
-    }
+    } */
 
-    .covid {
+/* .covid {
         height: 50vh;
         clip-path: polygon(0 5vh, 100% 0, 100% 100%, 0 100%);
     } */
+/* }
 
-/* } */
-
-/* @media (max-width: 362px) {
+@media (max-width: 362px) {
     .location {
         height: 120vh;
         margin-top: -10rem;
@@ -671,9 +677,6 @@ footer ul {
 } */
 
 /* @media (max-width: 321px) {
-    html {
-        font-size: 50%;
-    }
 
     .header {
         height: 70vh;
@@ -684,9 +687,14 @@ footer ul {
         height: 11rem;
     }
 
-    .heading-primary--main,
-    .heading-primary--sub {
-        padding-left: 2rem;
+    .header-primary--main {
+        height: 30rem;
+        padding-left: 7rem;
+    }
+
+    .header-primary--sub {
+        height: 30rem;
+        padding-left: 7rem;
     }
 
     .navigation-button {
@@ -704,9 +712,6 @@ footer ul {
         right: 12rem;
     }
 
-    .navigation-list {
-        left: 70%;
-    }
 
     .navigation-icon,
     .navigation-icon::before,
@@ -735,6 +740,6 @@ footer ul {
 
     .contact-box {
         left: 7%;
-    } */
+    }
 
-/* } */
+} */
