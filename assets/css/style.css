@@ -231,7 +231,7 @@ body {
 .location {
     padding: 16rem 0;
     margin-top: -13rem;
-    height: 160vh;
+    height: 100%;
     background-color: var(--light-grey);
 }
 
@@ -254,7 +254,7 @@ body {
     padding: 7rem 0;
     margin-top: -8rem;
     margin-bottom: 7rem;
-    height: 135vh;
+    height: 100%;
     background-color: var(--dark-grey);
     transform: skewY(-3deg);
     position: relative;
@@ -287,7 +287,7 @@ body {
     position: relative;
     background-color: var(--light-grey);
     margin-top: -20rem;
-    height: 100vh;
+    height: 90%;
     clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -414,18 +414,13 @@ footer ul {
     }
 
     .location {
-        height: 180vh;
         padding: 15rem 0;
     }
 
     .gallery {
-        height: 140vh;
-        margin-bottom: 0;
+        margin-bottom: 5rem;
     }
 
-    .contact {
-        height: 113vh;
-    }
 }
 
 @media (max-width: 1200px) {
@@ -493,10 +488,6 @@ footer ul {
     .contact-box {
         padding: 0;
     }
-
-    .contact {
-        height: 140vh;
-    }
 }
 
 @media (max-width: 850px) {
@@ -512,6 +503,15 @@ footer ul {
 
     .heading-primary--sub {
         font-size: 4rem;
+    }
+
+    .gallery {
+        transform: skewY(-5deg);
+    }
+
+    .gallery-content {
+        transform: skewY(5deg);
+
     }
 }
 
@@ -539,22 +539,10 @@ footer ul {
         padding: 0 2rem
     }
 
-
-    .location {
-        height: 100%;
-    }
-
-    .gallery {
-        height: 150vh;
-    }
-
     #carousel {
         transform: translate(-89%, -30%);
     }
 
-    .contact {
-        height: 90%;
-    }
 
     #copy {
         font-weight: 700;
@@ -602,7 +590,6 @@ footer ul {
 
     .navigation-list {
         top: 18%;
-        /* left: 53%; */
     }
 
     .navigation-link:link,
@@ -645,6 +632,15 @@ footer ul {
         width: 100%;
     }
 
+    .gallery {
+        transform: skewY(-8deg);
+    }
+
+    .gallery-content {
+        transform: skewY(8deg);
+
+    }
+
     #carousel {
         width: 90%;
         transform: translate(-78%, -30%);
@@ -676,20 +672,12 @@ footer ul {
         font-size: 5.5rem;
     }
 
-    .location {
-        height: 140rem;
-    }
-
     .image-container {
         padding: 0;
     }
 
     .col-10 {
         width: 100%;
-    }
-
-    .gallery {
-        height: 120vh;
     }
 
     .contact-box {
@@ -744,11 +732,12 @@ footer ul {
         font-size: 4rem;
     }
 
-    .location {
-        height: 400vh;
+    .gallery {
+        transform: skewY(-10deg);
     }
 
-    .contact {
-        height: 160vh;
+    .gallery-content {
+        transform: skewY(10deg);
+
     }
 }
