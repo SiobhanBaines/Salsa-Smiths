@@ -404,6 +404,10 @@ footer ul {
 }
 
 @media (max-width: 1400px) {
+    .header__text-box {
+        width: 70%;
+    }
+
     .navigation-list {
         top: 32%;
         left: 65%;
@@ -425,8 +429,10 @@ footer ul {
 }
 
 @media (max-width: 1200px) {
-    .header__text-box {
-        width: 60%;
+
+
+    .navigation-checkbox:checked~.navigation-background {
+        transform: scale(12);
     }
 
     #carousel {
@@ -447,8 +453,16 @@ footer ul {
     .navigation-background {
         height: 5rem;
         width: 5rem;
-        top: 2.5rem;
-        right: 2.5rem;
+        top: 3rem;
+        right: 3rem;
+    }
+
+    .navigation-icon {
+        margin-top: 2.5rem;
+    }
+
+    .navigation-list {
+        top: 16%;
     }
 
     .container {
@@ -486,6 +500,11 @@ footer ul {
 }
 
 @media (max-width: 850px) {
+
+    .navigation-list {
+        top: 22%;
+    }
+
     .heading-primary--main {
         font-size: 9rem;
         height: 22rem;
@@ -508,18 +527,6 @@ footer ul {
     .navigation-background {
         top: 3rem;
         right: 3rem;
-    }
-
-    .navigation-icon {
-        margin-top: 2.5rem;
-    }
-
-    .navigation-checkbox:checked~.navigation-background {
-        transform: scale(12);
-    }
-
-    .navigation-list {
-        top: 25%;
     }
 
     .header__text-box {
@@ -594,7 +601,8 @@ footer ul {
     }
 
     .navigation-list {
-        top: 22%;
+        top: 18%;
+        /* left: 53%; */
     }
 
     .navigation-link:link,
@@ -695,6 +703,10 @@ footer ul {
 }
 
 @media (max-width: 380px) {
+    .navigation-list {
+        left: 40%;
+    }
+
     .header__logo {
         height: 5rem;
     }
@@ -714,6 +726,14 @@ footer ul {
 }
 
 @media (max-width: 300px) {
+    .navigation-list {
+        left: 33%;
+    }
+
+    .navigation-checkbox:checked~.navigation-background {
+        transform: scale(8);
+    }
+
     .heading-primary--main {
         font-size: 4.5rem;
         height: 11rem;
